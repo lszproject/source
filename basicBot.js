@@ -259,7 +259,7 @@
         settings: {
             botName: 'PDU Bot',
             language: 'portuguese',
-            chatLink: 'https://raw.githack.com/lszproject/source/master/lang/en.json',
+            chatLink: 'https://raw.githack.com/lszproject/source/master/lang/pt-BR.json',
             scriptLink: 'https://raw.githack.com/lszproject/source/master/basicBot.js',
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
@@ -3672,8 +3672,8 @@
                                 oldTime = 0,
                                 usedThor = false,
                                 indexArrUsedThor,
-                                thorCd = false,
-                                timeInMinutes = 0,
+                                thorCd = true,
+                                timeInMinutes = 10,
                                 worthyAlg = Math.floor(Math.random() * 10) + 1,
                                 worthy = worthyAlg == 10 ? true : false;
 
