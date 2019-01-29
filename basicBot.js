@@ -288,7 +288,7 @@
             autodisable: false,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            thorCommand: true,
+            thorCommand: false,
             thorCooldown: 10,
             skipPosition: 3,
             skipReasons: [
@@ -3670,9 +3670,9 @@
                                 djlist = API.getWaitList(),
                                 inDjList = false,
                                 oldTime = 0,
-                                usedThor = true,
+                                usedThor = false,
                                 indexArrUsedThor,
-                                thorCd = true,
+                                thorCd = false,
                                 timeInMinutes = 10,
                                 worthyAlg = Math.floor(Math.random() * 10) + 1,
                                 worthy = worthyAlg == 10 ? true : false;
