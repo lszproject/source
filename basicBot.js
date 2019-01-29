@@ -247,26 +247,26 @@
     var basicBot = {
         version: '2.12.3',
         status: false,
-        name: 'basicBot',
+        name: 'PDU Bot',
         loggedInID: null,
-        scriptLink: 'https://raw.githack.com/basicBot/source/master/basicBot.js',
+        scriptLink: 'https://raw.githack.com/lszproject/source/master/basicBot.js',
         cmdLink: 'http://git.io/245Ppg',
-        chatLink: 'https://raw.githack.com/basicBot/source/master/lang/en.json',
+        chatLink: 'https://raw.githack.com/lszproject/source/master/lang/en.json',
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: 'basicBot',
-            language: 'english',
-            chatLink: 'https://raw.githack.com/basicBot/source/master/lang/en.json',
-            scriptLink: 'https://raw.githack.com/basicBot/source/master/basicBot.js',
+            botName: 'PDU Bot',
+            language: 'portuguese',
+            chatLink: 'https://raw.githack.com/lszproject/source/master/lang/en.json',
+            scriptLink: 'https://raw.githack.com/lszproject/source/master/basicBot.js',
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
             autowoot: true,
-            autoskip: false,
+            autoskip: true,
             smartSkip: true,
             cmdDeletion: true,
             maximumAfk: 120,
@@ -288,7 +288,7 @@
             autodisable: false,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            thorCommand: false,
+            thorCommand: true,
             thorCooldown: 10,
             skipPosition: 3,
             skipReasons: [
@@ -304,8 +304,8 @@
             afkRankCheck: 'ambassador',
             motdEnabled: false,
             motdInterval: 5,
-            motd: 'Temporary Message of the Day',
-            filterChat: true,
+            motd: 'Seja bem vindo anãozinho, toque música de qualidade e leia as regras clicando no nome da sala no canto superior esquerdo.',
+            filterChat: false,
             etaRestriction: false,
             welcome: true,
             opLink: null,
@@ -2712,8 +2712,8 @@
             },
 
             killCommand: {
-                command: 'kill',
-                rank: 'bouncer',
+                command: 'turnoff',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function(chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
