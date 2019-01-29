@@ -245,8 +245,8 @@
     var botCreatorIDs = [3851534, 4105209];
 
     var basicBot = {
-        version: '2.12.3',
-        status: false,
+        version: '',
+        status: true,
         name: 'PDU Bot',
         loggedInID: null,
         scriptLink: 'https://raw.githack.com/lszproject/source/master/basicBot.js',
@@ -270,7 +270,7 @@
             smartSkip: true,
             cmdDeletion: true,
             maximumAfk: 120,
-            afkRemoval: true,
+            afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
             blacklistEnabled: true,
@@ -284,7 +284,7 @@
             historySkip: false,
             timeGuard: true,
             strictTimeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLength: 6.5,
             autodisable: false,
             commandCooldown: 30,
             usercommandsEnabled: true,
