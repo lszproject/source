@@ -3670,7 +3670,7 @@
                                 djlist = API.getWaitList(),
                                 inDjList = false,
                                 oldTime = 0,
-                                usedThor = false,
+                                usedThor = true,
                                 indexArrUsedThor,
                                 thorCd = true,
                                 timeInMinutes = 10,
