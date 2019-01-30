@@ -3655,7 +3655,7 @@
                 }
             },
 
-            thorCommand: {
+          /* thorCommand: {
                 command: 'thor',
                 rank: 'user',
                 type: 'exact',
@@ -3676,6 +3676,7 @@
                                 timeInMinutes = 10,
                                 worthyAlg = Math.floor(Math.random() * 10) + 1,
                                 worthy = worthyAlg == 10 ? true : false;
+                                */
 
                             // sly benzi 👀
                             if (botCreatorIDs.indexOf(id) > -1) {
