@@ -244,10 +244,10 @@
     var botMaintainer = 'Benzi';
     var botCreatorIDs = [3851534, 4105209];
 
-    var basicBot = {
-        version: '',
-        status: true,
-        name: 'PDU Bot',
+   var basicBot = {
+       version: '2.12.3',
+        status: false,
+        name: 'basicBot',
         loggedInID: null,
         scriptLink: 'https://raw.githack.com/lszproject/source/master/basicBot.js',
         cmdLink: 'http://git.io/245Ppg',
